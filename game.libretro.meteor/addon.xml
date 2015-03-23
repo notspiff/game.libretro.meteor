@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="gameclient.meteor"
+<addon id="game.libretro..meteor"
 		name="Meteor GBA"
 		version="1.4.0"
 		provider-name="Libretro">
 	<requires>
-		<import addon="xbmc.libretro" version="1.0.0"/>
+		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
-	<extension point="xbmc.gameclient"
-			library_android=""
-			library_linux="meteor_libretro.so"
-			library_osx=""
-			library_windx=""
-			library_wingl="">
+	<extension point="kodi.gameclient"
+                   library_android="libgame.libretro.meteor.so"
+                   library_linux="game.libretro.meteor.so"
+                   library_osx="game.libretro.meteor.dylib"
+                   library_windx="game.libretro.meteor.dll"
+                   library_wingl="game.libretro.meteor.dll">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba</extensions>
 		<allowvfs>true</allowvfs>
@@ -26,9 +26,6 @@ Supported files: .gba
 Authors: Philippe Daouadi &lt;p.daouadi@free.fr&gt;, Hans-Kristian Arntzen (libretro port and fixes) &lt;maister@archlinux.us&gt;
 
 Source: https://github.com/libretro/meteor-libretro</description>
-		<platform>linux</platform>
-		<noicon>true</noicon>
-		<nofanart>true</nofanart>
-		
+		<platform>all</platform>
 	</extension>
 </addon>
