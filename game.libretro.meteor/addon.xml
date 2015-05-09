@@ -15,8 +15,8 @@
                    library_wingl="game.libretro.meteor.dll">
 		<platforms>Game Boy Advance</platforms>
 		<extensions>gba</extensions>
-		<allowvfs>true</allowvfs>
-		<blockextract>false</blockextract>
+		<supports_vfs>true</supports_vfs>
+		<supports_no_game>false</supports_no_game>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Meteor GBA v1.4</summary>
