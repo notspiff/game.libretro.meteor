@@ -44,4 +44,4 @@ install(FILES ${PROJECT_SOURCE_DIR}/libretro/meteor_libretro${CMAKE_SHARED_LIBRA
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 
 # write the meteor-config.cmake script
-file(WRITE ${CMAKE_INSTALL_PREFIX}/meteor-config.cmake "set(METEOR_LIB ${CMAKE_INSTALL_PREFIX}/lib/meteor_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})")
+file(WRITE ${CMAKE_INSTALL_PREFIX}/libretro-meteor-config.cmake "set(METEOR_LIB ${CMAKE_INSTALL_PREFIX}/lib/meteor_libretro${CMAKE_SHARED_LIBRARY_SUFFIX})")
