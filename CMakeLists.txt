@@ -1,16 +1,13 @@
+cmake_minimum_required(VERSION 3.1)
 project(game.libretro.meteor)
 
-cmake_minimum_required(VERSION 2.6)
-
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
-
-enable_language(CXX)
 
 find_package(Kodi REQUIRED)
 find_package(libretro-meteor REQUIRED)
 
 set(DEPLIBS meteor)
 set(METEOR_CUSTOM_BINARY ${METEOR_LIB}
-                         game.libretro.meteor${CMAKE_SHARED_LIBRARY_SUFFIX} meteor)
+                         ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
 
-build_addon(game.libretro.meteor METEOR DEPLIBS)
+build_addon(${PROJECT_NAME} METEOR DEPLIBS)
