@@ -6,8 +6,7 @@ list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 find_package(Kodi REQUIRED)
 find_package(libretro-meteor REQUIRED)
 
-set(DEPLIBS meteor)
 set(METEOR_CUSTOM_BINARY ${METEOR_LIB}
-                         ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
+    ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
 
-build_addon(${PROJECT_NAME} METEOR DEPLIBS)
+build_addon(${PROJECT_NAME} METEOR "")
